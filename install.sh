@@ -25,4 +25,4 @@ echo ">>> DELETING REPOSITORY"
 rm -rf docker_docker-compose_makefile
 
 # USAGE
-# curl https://github.com/theabstractconnection/docker_docker-compose_makefile/blob/master/Dockerfile | bash
+# curl https://github.com/theabstractconnection/docker_docker-compose_makefile/blob/master/install.sh | bash
