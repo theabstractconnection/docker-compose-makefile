@@ -2,9 +2,9 @@
 : ${TRANSPORT:="ssh"}
 
 case $TRANSPORT in
- ssh)   GIT_URL="git@github.com:theabstractconnection/docker_docker-compose_makefile.git" ;;
- http)  GIT_URL="https://github.com/theabstractconnection/docker_docker-compose_makefile.git" ;;
- https) GIT_URL="https://github.com/theabstractconnection/docker_docker-compose_makefile.git" ;;
+ ssh)   GIT_URL="git@github.com:theabstractconnection/docker-compose_makefile.git" ;;
+ http)  GIT_URL="https://github.com/theabstractconnection/docker-compose_makefile.git" ;;
+ https) GIT_URL="https://github.com/theabstractconnection/docker-compose_makefile.git" ;;
 esac
 
 echo ""
@@ -16,13 +16,13 @@ echo ">>> CLONING REPOSITORY"
 git clone $GIT_URL
 
 echo ">>> COPYING FILES"
-cp ./docker_docker-compose_makefile/docker-compose.yml .
-cp ./docker_docker-compose_makefile/Dockerfile .
-cp ./docker_docker-compose_makefile/Makefile .
-cp ./docker_docker-compose_makefile/LICENSE .
+cp ./docker-compose_makefile/docker-compose.yml .
+cp ./docker-compose_makefile/Dockerfile .
+cp ./docker-compose_makefile/Makefile .
+cp ./docker-compose_makefile/LICENSE .
 
 echo ">>> DELETING REPOSITORY"
-rm -rf docker_docker-compose_makefile
+rm -rf docker-compose_makefile
 
 # USAGE
-# curl https://raw.githubusercontent.com/theabstractconnection/docker_docker-compose_makefile/master/install.sh | bash
+# curl https://raw.githubusercontent.com/theabstractconnection/docker-compose_makefile/master/install.sh | bash
