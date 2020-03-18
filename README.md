@@ -1,4 +1,4 @@
-# docker_docker-compose_makefile
+# docker-compose_makefile
 This projects contains files you can kickstart your new Docker project with. It is designed for the purpuse of sharing builds of infra-system-parts, but not necessarily constrained to that.
 
 ## Files
