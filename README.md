@@ -39,3 +39,11 @@ Small Alpine (multi-stage) container with bash added for fun and practice. This 
 
 ### docker-compose.yml
 Like the Dockerfile, this file is also meant to go along with the Makefile and meant to get the basics of USER/ UID setup correctly.
+
+### install.sh
+Install script to generate default Dockerile, docker-compose.yml, LICENSE and Makefile in existing git repository  
+You can use it like this:
+```
+export TRANSPORT=http
+curl https://raw.githubusercontent.com/theabstractconnection/docker-compose_makefile/master/install.sh | bash
+```
