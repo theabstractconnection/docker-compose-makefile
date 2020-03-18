@@ -23,7 +23,6 @@ cp ./docker-compose_makefile/LICENSE .
 
 echo ">>> DELETING REPOSITORY"
 rm -rf docker-compose_makefile
-rm -f install.sh
 
 # USAGE
 # curl https://raw.githubusercontent.com/theabstractconnection/docker-compose_makefile/master/install.sh | bash
