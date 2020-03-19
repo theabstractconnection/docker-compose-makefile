@@ -1,5 +1,5 @@
 #!/bin/bash
-: ${TRANSPORT:="ssh"}
+TRANSPORT=${TRANSPORT:=ssh}
 
 case $TRANSPORT in
  ssh)   GIT_URL="git@github.com:theabstractconnection/docker-compose_makefile.git" ;;
