@@ -28,8 +28,7 @@ case $INSTALL_TYPE in
  update)
   echo "☠☠☠ UPDATING FILES"
   cp ./docker-compose_makefile/Makefile-scripts.sh .
-  cp ./docker-compose_makefile/post-install.sh . ;;
-
+  cp ./docker-compose_makefile/Makefile .
 esac
 
 echo "☠☠☠ DELETING REPOSITORY"
