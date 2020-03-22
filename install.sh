@@ -9,8 +9,8 @@ case $TRANSPORT in
 esac
 
 echo ""
-echo "TRANSPORT    : $TRANSPORT"
-echo "GIT_URL      :  $GIT_URL"
+echo "TRANSPORT         : $TRANSPORT"
+echo "GIT_URL           :  $GIT_URL"
 echo "D_MK_INSTALL_TYPE :  $D_MK_INSTALL_TYPE"
 echo ""
 
