@@ -42,8 +42,13 @@ Like the Dockerfile, this file is also meant to go along with the Makefile and m
 
 ### install.sh
 Install script to generate default Dockerile, docker-compose.yml, LICENSE and Makefile in existing git repository  
+
+TRANSPORT = ssh || http (default ssh)
+INSTALL_TYPE = install || update (default install)  
+
 You can use it like this:
 ```
 export TRANSPORT=http
-curl https://raw.githubusercontent.com/theabstractconnection/docker-compose_makefile/master/install.sh | bash
+export INSTALL_TYPE=install
+curl https://raw.githubusercontent.com/theabstractconnection/docker-compose_makefile/master/install.sh?_=$(date +%s) | bash
 ```

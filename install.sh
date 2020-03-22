@@ -36,4 +36,4 @@ echo "☠☠☠ DELETING REPOSITORY"
 rm -rf docker-compose_makefile
 
 # USAGE
-# curl https://raw.githubusercontent.com/theabstractconnection/docker-compose_makefile/master/install.sh | bash
+# curl https://raw.githubusercontent.com/theabstractconnection/docker-compose_makefile/master/install.sh?_=$(date +%s) | bash
