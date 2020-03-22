@@ -1,5 +1,6 @@
 #!/bin/bash
-TRANSPORT=${TRANSPORT:=ssh}
+TRANSPORT=${TRANSPORT:-ssh}
+INSTALL_TYPE=${INSTALL_TYPE:-install}
 
 case $TRANSPORT in
  ssh)   GIT_URL="git@github.com:theabstractconnection/docker-compose_makefile.git" ;;
@@ -12,16 +13,26 @@ echo "TRANSPORT : $TRANSPORT"
 echo "GIT_URL   :  $GIT_URL"
 echo ""
 
-echo ">>> CLONING REPOSITORY"
+echo "☠☠☠ CLONING REPOSITORY"
 git clone $GIT_URL
 
-echo ">>> COPYING FILES"
-cp ./docker-compose_makefile/docker-compose.yml .
-cp ./docker-compose_makefile/Dockerfile .
-cp ./docker-compose_makefile/Makefile .
-cp ./docker-compose_makefile/LICENSE .
+case $INSTALL_TYPE in
+ install) 
+  echo "☠☠☠ COPYING FILES"
+  cp ./docker-compose_makefile/docker-compose.yml .
+  cp ./docker-compose_makefile/Dockerfile .
+  cp ./docker-compose_makefile/Makefile .
+  cp ./docker-compose_makefile/Makefile-scripts.sh .
+  cp ./docker-compose_makefile/post-install.sh .
+  cp ./docker-compose_makefile/LICENSE . ;;
+ update)
+  echo "☠☠☠ UPDATING FILES"
+  cp ./docker-compose_makefile/Makefile-scripts.sh .
+  cp ./docker-compose_makefile/post-install.sh . ;;
 
-echo ">>> DELETING REPOSITORY"
+esac
+
+echo "☠☠☠ DELETING REPOSITORY"
 rm -rf docker-compose_makefile
 
 # USAGE
