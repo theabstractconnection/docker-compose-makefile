@@ -9,8 +9,9 @@ case $TRANSPORT in
 esac
 
 echo ""
-echo "TRANSPORT : $TRANSPORT"
-echo "GIT_URL   :  $GIT_URL"
+echo "TRANSPORT    : $TRANSPORT"
+echo "GIT_URL      :  $GIT_URL"
+echo "INSTALL_TYPE :  $INSTALL_TYPE"
 echo ""
 
 echo "☠☠☠ CLONING REPOSITORY"
