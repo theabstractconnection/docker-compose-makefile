@@ -50,5 +50,5 @@ You can use it like this:
 ```
 export TRANSPORT=http
 export INSTALL_TYPE=install
-curl https://raw.githubusercontent.com/theabstractconnection/docker-compose_makefile/master/install.sh?_=$(date +%s) | bash
+curl -H "Cache-Control: no-cache" https://raw.githubusercontent.com/theabstractconnection/docker-compose_makefile/master/install.sh | bash
 ```
