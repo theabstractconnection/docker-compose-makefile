@@ -27,8 +27,8 @@ case $INSTALL_TYPE in
   cp ./docker-compose_makefile/LICENSE . ;;
  update)
   echo "☠☠☠ UPDATING FILES"
-  cp ./docker-compose_makefile/Makefile .
-  cp ./docker-compose_makefile/Makefile_scripts.sh .
+  yes | cp cp -f ./docker-compose_makefile/Makefile .
+  yes | cp cp -f ./docker-compose_makefile/Makefile_scripts.sh .
 esac
 
 echo "☠☠☠ DELETING REPOSITORY"
