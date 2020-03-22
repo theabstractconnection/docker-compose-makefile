@@ -22,13 +22,13 @@ case $INSTALL_TYPE in
   cp ./docker-compose_makefile/docker-compose.yml .
   cp ./docker-compose_makefile/Dockerfile .
   cp ./docker-compose_makefile/Makefile .
-  cp ./docker-compose_makefile/Makefile-scripts.sh .
+  cp ./docker-compose_makefile/Makefile_scripts.sh .
   cp ./docker-compose_makefile/post-install.sh .
   cp ./docker-compose_makefile/LICENSE . ;;
  update)
   echo "☠☠☠ UPDATING FILES"
-  cp ./docker-compose_makefile/Makefile-scripts.sh .
   cp ./docker-compose_makefile/Makefile .
+  cp ./docker-compose_makefile/Makefile_scripts.sh .
 esac
 
 echo "☠☠☠ DELETING REPOSITORY"
