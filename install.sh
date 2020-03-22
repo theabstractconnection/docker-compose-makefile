@@ -1,6 +1,6 @@
 #!/bin/bash
 TRANSPORT=${TRANSPORT:-ssh}
-INSTALL_TYPE=${INSTALL_TYPE:-install}
+D_MK_INSTALL_TYPE=${D_MK_INSTALL_TYPE:-install}
 
 case $TRANSPORT in
  ssh)   GIT_URL="git@github.com:theabstractconnection/docker-compose_makefile.git" ;;
@@ -11,13 +11,13 @@ esac
 echo ""
 echo "TRANSPORT    : $TRANSPORT"
 echo "GIT_URL      :  $GIT_URL"
-echo "INSTALL_TYPE :  $INSTALL_TYPE"
+echo "D_MK_INSTALL_TYPE :  $D_MK_INSTALL_TYPE"
 echo ""
 
 echo "☠☠☠ CLONING REPOSITORY"
 git clone $GIT_URL
 
-case $INSTALL_TYPE in
+case $D_MK_INSTALL_TYPE in
  install) 
   echo "☠☠☠ COPYING FILES"
   cp ./docker-compose_makefile/docker-compose.yml .
