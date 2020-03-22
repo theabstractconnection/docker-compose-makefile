@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 # parse_yaml file.yml
 parse_yaml() {
    local prefix=$2
