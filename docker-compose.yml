@@ -33,9 +33,6 @@ services:
     # Set container depenpencies
     # depends_on:
     #   - db
-    # Set environment variables
-    # environment:
-    #   - ENV=${ENV:-default}
     # Copy current (git-) project into container.
     volumes:
       - ${PWD:-.}:/home/${HOST_USER}/${PROJECT_NAME}
