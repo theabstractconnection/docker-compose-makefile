@@ -27,6 +27,13 @@ services:
         - PROJECT_NAME=${PROJECT_NAME}
     # Run container as a service. Replace with something useful.
     command: ["tail", "-f", "/dev/null"]
+    # Espose ports to the HOST:OTHER_CONTAINERS
+    # ports:
+    #   - XXXX:XXXX
+    # Set container depenpencies
+    # depends_on:
+    #   - db
+    # Set environment variables
     # Copy current (git-) project into container.
     volumes:
       - ${PWD:-.}:/home/${HOST_USER}/${PROJECT_NAME}
