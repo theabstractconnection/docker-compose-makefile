@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 TRANSPORT=${TRANSPORT:-ssh}
 D_MK_INSTALL_TYPE=${D_MK_INSTALL_TYPE:-install}
 
